@@ -1,0 +1,47 @@
+.wrapper{
+    height: 100dvh;
+    background-color: antiquewhite;
+    padding: 3rem;
+}
+.ani{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background: linear-gradient(to bottom right, rgb(255, 186, 13), rgba(124, 53, 5, 0.884));
+     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+
+.pendulum
+{
+    padding: 6rem;
+    height: 4px;
+    width: 45%;
+    /* text-align: center; */
+    transform: rotate(145deg);
+    transform-origin: 0% 50%;
+    animation: pendulum 10s ease-in-out infinite;
+    /* background-color: aqua; */
+   
+    
+}
+.position{
+    position: relative;
+    top:0;
+    left: 50%;
+    transform: translate(-50% -50%);
+}
+
+
+@keyframes pendulum {
+
+    0%,100%{
+        transform: rotate(145deg);
+    }
+    50%{
+        transform: rotate(35deg);
+    }
+    
+}
